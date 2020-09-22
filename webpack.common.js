@@ -11,7 +11,7 @@ module.exports = {
     target: "web",
     mode: "development",
     output: {
-        filename: "[name].[hash].bundle.js",
+        filename: "loader.js",
         path: path.resolve(__dirname, "dist"),
     },
     resolve: {
@@ -76,7 +76,7 @@ module.exports = {
         }),
     ],
     devServer: {
-        port: 1234,
+        port: 3000,
         stats: "errors-only",
         hot: true,
         writeToDisk: true,
